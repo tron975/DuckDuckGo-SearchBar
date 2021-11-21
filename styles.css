@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box; /* Width and height properties (and min/max properties) includes content, padding and border */
+ }
+
+ 
+ body{
+    background: #1c1c1c; /* Set background color to a lightish black/grey */
+    margin: 0; /* Remove padding & margins from body */
+    padding: 0;
+    height: 100vh;
+
+}
+
+.header {
+    display: flex; /* Align everything in the center vertically & put content on the left */
+    align-items: center;
+    justify-content: left;
+    border-bottom: 1px solid rgb(54, 54, 54); /* Border bottom to make it look more like DuckDuckGo */
+    background: #161616; /* Darker background for the top search portion */
+    height: 5rem; /* Set the height */
+
+}
+
+.duck-logo {
+    height: 50px; /* Change logo size */
+    margin-right: 3rem; /* Add margins on right & left */
+    margin-left: 6rem;
+    user-select: none;
+}
+
+.header .search-icon{
+    padding: 0.4em 0.4em; /* Add padding to the search icon  */
+    border-top-right-radius: 10px; /* Add border-radius to top right & bottom right for better look  */
+    border-bottom-right-radius: 10px;
+    height: 44.5px; /* Set size of search icon */
+    width: 3rem; /* Set the width so it isn't too narrow */ 
+    color: rgb(107, 107, 107); /* Make search icon grey color */
+    background: #333333; 
+    border: none;
+    cursor: pointer;
+}
+
+.header .search-icon:hover, /* Changing background color of search icon on hover */
+.header .search-icon:focus {
+    background: #3969EF;
+    color: rgb(228, 228, 228);
+}
+
+.header #search-text {
+    width: 40rem;
+    text-indent: 1ch;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+    background-color: #333333;
+    height: 44.5px;
+    color: #eeeeee;
+    font-size: 16px;
+    text-align: start;
+}
+
+
+
+.header #delete {
+    padding: 0.1em 0.3em;
+    color: grey;
+    font-size: 33.3px;
+    cursor: default;
+    user-select: none;
+    background: #333333;
+    cursor: pointer;
+    height: 44.5px;
+
+}
+
+.header #delete:hover {
+    color: rgb(192, 192, 192);
+}
